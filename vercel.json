@@ -1,0 +1,17 @@
+{
+    "functions": {
+        "app/api/**/route.ts": {
+            "maxDuration": 60
+        }
+    },
+    "headers": [
+        {
+            "source": "/api/:name",
+            "headers": [
+                {
+                    "content-type": "application/json; charset=utf-8"
+                }
+            ]
+        }
+    ]
+}
